@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sweta’s Portfolio</title>
+</head>
+<body>
+  <h1 id="intro">Welcome!</h1>
+  <button onclick="showSkills()">Show Skills</button>
+  <div id="skills"></div>
+
+  <script>
+    function showSkills() {
+      let skills = ["HTML", "CSS", "Bootstrap", "JavaScript"];
+      document.getElementById("intro").innerHTML = "Sweta Singh’s Portfolio";
+      document.getElementById("skills").innerHTML = skills.join(", ");
+    }
+  </script>
+</body>
+</html>
