@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Accessing Values</title>
+</head>
+<body>
+  <h2 id="title">Sweta’s Portfolio</h2>
+  <p id="skill">Skill: Bootstrap</p>
+  <input type="text" id="hobby" value="Swimming">
+  <button onclick="showValues()">Show Values</button>
+
+  <h3 id="result"></h3>
+
+  <script>
+    function showValues() {
+      // Accessing values with DOM
+      let titleText = document.getElementById("title").innerHTML;
+      let skillText = document.getElementById("skill").innerHTML;
+      let hobbyValue = document.getElementById("hobby").value;
+
+      // Display result
+      document.getElementById("result").innerHTML =
+        "Title: " + titleText + "<br>" +
+        skillText + "<br>" +
+        "Hobby: " + hobbyValue;
+    }
+  </script>
+</body>
+</html>
